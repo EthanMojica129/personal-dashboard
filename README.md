@@ -1,70 +1,18 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Project Name: Personal Dashboard
+The objective of the project was the creation of responsive personal dashboard with three components:
+- User Profile
+- Current Weather
+- To Do List
+My main objective when creating this personal dashboard is providing a minimalist approach withouth many bells and whistles. Just a Plain Dashboard withouth any kind of adds. This is perfect for persons that have a hard time concentrating on different tasks and wants something that goes directly to the point.
+## User Profile
+For the User Profile I hard coded the information, mostly for the sake of convenience. The user profile has three main components:
+- A profile Picture
+- The Name
+- The email
+The layout of the user profile was made taking into account the natural flow of reading of most persons on the western hemisphere (Left-to-right, top-to-bottom) and is on a font size comfortable enough to be read withouth issues.
+## Weather Component
+The Weather Component uses the Open Weather API. The key is save in a .env archive for more security. The logic behind the component allow to search for specific cities and render the weather conditions using the metric system. It updates when the enter Key is pressed down or the search button is clicked. 
+## To Do List Component
+The To Do List uses an array to save the items and updates the state when a new item is added or deleted. It comes hard coded with three tasks. It allows the user to check a to do list item, this doesn't eliminate the item, it just cross it out. 
+## Design Desition
+My main focus was the creation of a plain and simple app. I wanted to take a minimalist approach to avoid possible user confusion. By making it simple enough, the user wouldn't find challanges at the moment of using it. 
